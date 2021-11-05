@@ -19,7 +19,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install -g release-it
+    - run: npm ci
     - run: git config --global user.name GitHubAction
     - run: git config --global user.email GitHubAction@freecast.com  
-    - run: release-it
+    - run: npm run release
