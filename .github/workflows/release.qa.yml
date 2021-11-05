@@ -22,4 +22,5 @@ jobs:
     - run: npm ci
     - run: git config --global user.name GitHubAction
     - run: git config --global user.email GitHubAction@freecast.com  
+    - run: git checkout develop
     - run: npm run release --ci
